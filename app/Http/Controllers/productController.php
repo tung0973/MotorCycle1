@@ -51,7 +51,9 @@ class productController extends Controller
 
         return view('trang-chu.productlist',compact(['products','categories']))->with('i',(request()->input('page',1)-1)*5);
     }
-
+    public function Productpage(){
+        return view('trang-chu.productpage');
+    }
 
 
     public function create()

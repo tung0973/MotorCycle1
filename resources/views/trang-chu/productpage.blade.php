@@ -7,123 +7,172 @@
     <link rel="stylesheet" href="{{asset('niceadmin/trang-chu/css/productpage.css')}}">
     <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
 
-
-    <div class = "card-wrapper">
-        <div class = "card">
-            <!-- card left -->
-            <div class = "product-imgs">
-                <div class = "img-display">
-                    <div class = "img-showcase">
-                        <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt = "shoe image">
-                        <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt = "shoe image">
-                        <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
-                        <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image">
+    <div class="product-details-main">
+        <div class="container">
+            <div class="product-details-box">
+                <div class="product-details-img">
+                    <img id="product_img" src="{{URL::asset('niceadmin/trang-chu/images/Big_product/scorpion_exo_r420_black_750x750.jpg')}}" alt="helmet" width="80%">
+                    <div class="small-img-row">
+                        <div class="small-img-colum">
+                            <img class="small_img" src="{{URL::asset('niceadmin/trang-chu/images/Big_product/scorpion_exo_r420_white_750x750.jpg')}}" alt="helmet">
+                        </div>
+                        <div class="small-img-colum">
+                            <img class="small_img" src="{{URL::asset('niceadmin/trang-chu/images/Big_product/scorpion_exo_r420_matte_titanium_750x750.jpg')}}" alt="helmet">
+                        </div>
+                        <div class="small-img-colum">
+                            <img class="small_img" src="{{URL::asset('niceadmin/trang-chu/images/Big_product/scorpion_exo_r420_matte_titanium_750x750 (1).jpg')}}" alt="helmet">
+                        </div>
+                        <div class="small-img-colum">
+                            <img class="small_img" src="{{URL::asset('niceadmin/trang-chu/images/Big_product/scorpion_exo_r420_black_750x750.jpg')}}" alt="helmet">
+                        </div>
                     </div>
                 </div>
-                <div class = "img-select">
-                    <div class = "img-item">
-                        <a href = "#" data-id = "1">
-                            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt = "shoe image">
-                        </a>
+                <div class="product-details-in4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                    <h1>Scorpion EXO-R420 Helmet</h1>
+                    <div class="price_detail">
+                        <h4>$150.00</h4>
                     </div>
-                    <div class = "img-item">
-                        <a href = "#" data-id = "2">
-                            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt = "shoe image">
-                        </a>
-                    </div>
-                    <div class = "img-item">
-                        <a href = "#" data-id = "3">
-                            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
-                        </a>
-                    </div>
-                    <div class = "img-item">
-                        <a href = "#" data-id = "4">
-                            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image">
-                        </a>
+                    <h3 class="product-details-title">Product Details</h3>
+                    <p>The Scorpion EXO-R420 isn't some half-baked race-inspired helmet.
+                        This is the real deal, with an advanced LG polycarbonate shell that is SNELL approved.
+                        The Ellip-Tec 2 face shield pulls the shield snug,
+                        making the EXO-R420 aerodynamic.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="size">Size</label>
+                            <select id="size" name="size" class="form-control">
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="color">Color</label>
+                            <select id="color" name="color" class="form-control">
+                                <option>Blue</option>
+                                <option>Green</option>
+                                <option>Red</option>
+                            </select>
+                        </div>
+                        <div class="product-count">
+                            <label for="size">Quantity</label>
+                            <form action="#" class="display-flex">
+                                <div class="qtyminus">-</div>
+                                <input type="text" name="quantity" value="1" class="qty">
+                                <div class="qtyplus">+</div>
+                            </form>
+                            <a href="#" class="round-black-btn">Add to Cart</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- card right -->
-            <div class = "product-content">
-                <h2 class = "product-title">Helmet</h2>
-                <a href = "#" class = "product-link">visit store</a>
-                <div class = "product-rating">
-                    <i class = "fas fa-star"></i>
-                    <i class = "fas fa-star"></i>
-                    <i class = "fas fa-star"></i>
-                    <i class = "fas fa-star"></i>
-                    <i class = "fas fa-star-half-alt"></i>
-                    <span>4.7(21)</span>
-                </div>
-
-                <div class = "product-price">
-                    <p class = "last-price">Old Price: <span>$257.00</span></p>
-                    <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
-                </div>
-
-                <div class = "product-detail">
-                    <h2>about this item: </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
-                    <ul>
-                        <li>Color: <span>Black</span></li>
-                        <li>Available: <span>in stock</span></li>
-                        <li>Category: <span>Shoes</span></li>
-                        <li>Shipping Area: <span>All over the world</span></li>
-                        <li>Shipping Fee: <span>Free</span></li>
-                    </ul>
-                </div>
-
-                <div class = "purchase-info">
-                    <input type = "number" min = "0" value = "1">
-                    <button type = "button" class = "btn">
-                        Add to Cart <i class = "fas fa-shopping-cart"></i>
-                    </button>
-                    <button type = "button" class = "btn">Compare</button>
-                </div>
-
-                <div class = "social-links">
-                    <p>Share At: </p>
-                    <a href = "#">
-                        <i class = "fab fa-facebook-f"></i>
-                    </a>
-                    <a href = "#">
-                        <i class = "fab fa-twitter"></i>
-                    </a>
-                    <a href = "#">
-                        <i class = "fab fa-instagram"></i>
-                    </a>
-                    <a href = "#">
-                        <i class = "fab fa-whatsapp"></i>
-                    </a>
-                    <a href = "#">
-                        <i class = "fab fa-pinterest"></i>
-                    </a>
+            <div class="product-info-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item active">
+                        <a id="description-tab" data-toggle="tab" href="#description" role="tab">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="review-tab" data-toggle="tab" href="#review" role="tab">Reviews (0)</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="description">
+                        The Scorpion EXO-R420 isn't some half-baked race-inspired helmet.
+                        This is the real deal, with an advanced LG polycarbonate shell that is SNELL approved.
+                        The Ellip-Tec 2 face shield pulls the shield snug,
+                        making the EXO-R420 aerodynamic.
+                    </div>
+                    <div class="tab-pane show fade " id="review">
+                        <div class="review-heading">REVIEWS</div>
+                        <p class="mb-20">There are no reviews yet.</p>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <label>Your rating</label>
+                                <div class="reviews-counter">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Your message</label>
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control" placeholder="Name*">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control" placeholder="Email Id*">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="round-black-btn">Submit Review</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-@endsection
-@section('productpage')
+
+
+    <! ---- Js for product img ----!>
     <script>
-    const imgs = document.querySelectorAll('.img-select a');
-    const imgBtns = [...imgs];
-    let imgId = 1;
+        let ProductImg = document.getElementById("product_img");
+        let SmallImg = document.getElementsByClassName("small_img");
 
-    imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-    event.preventDefault();
-    imgId = imgItem.dataset.id;
-    slideImage();
-    });
-    });
+        SmallImg[0].onmouseover = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onmouseover = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onmouseover = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onmouseover = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+    <script>
+        $("document").ready(function () {
+            $(".qtyminus").on("click",function(){
+                var now = $(".qty").val();
+                if ($.isNumeric(now)){
+                    if (parseInt(now) -1> 0)
+                    { now--;}
+                    $(".qty").val(now);
+                }
+            })
+            $(".qtyplus").on("click",function(){
+                var now = $(".qty").val();
+                if ($.isNumeric(now)){
+                    $(".qty").val(parseInt(now)+1);
+                }
+            });
+        })
 
-    function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-    }
-
-    window.addEventListener('resize', slideImage);
     </script>
 @endsection

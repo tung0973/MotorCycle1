@@ -82,6 +82,7 @@ Route::resource('profile', \App\Http\Controllers\profileController::class);
 
 Route::get('/',[\App\Http\Controllers\productController::class,'home'])->name('trang-chu.home');
 Route::get('/products',[\App\Http\Controllers\productController::class,'Products'])->name('products');
+Route::get('/productspage',[\App\Http\Controllers\productController::class,'ProductPage'])->name('productspage');
 
 
 
@@ -90,7 +91,4 @@ Route::post('add Cart',[\App\Http\Controllers\cartController::class,'addToCart']
 Route::get('/ShoppingCart',function(){
     return view('Cart.ShoppingCart');
 });
-Route::post('productPage',[\App\Http\Controllers\productController::class,'productpage'])->name('productpage');
-Route::get('/productPage',function(){
-    return view('trang-chu.productpage');
-});
+

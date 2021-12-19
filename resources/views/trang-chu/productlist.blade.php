@@ -59,6 +59,7 @@
                     </div>
                     <div class="product_category">
                         <h5 class="product_category_title">Category</h5>
+
                     </div>
                     <div class="products_brand">
 
